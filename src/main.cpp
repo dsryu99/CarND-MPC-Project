@@ -167,8 +167,6 @@ int main() {
           vector<double> mpc_x_vals;
           vector<double> mpc_y_vals;
 
-          //.. add (x,y) points to list here, points are in reference to the vehicle's coordinate system
-          // the points in the simulator are connected by a Green line
           int split_point = (vars.size() - 2) / 2;
           for (int i = 2; i < split_point + 2; i++) {
             mpc_x_vals.push_back(vars[i]);
@@ -182,8 +180,6 @@ int main() {
           vector<double> next_x_vals;
           vector<double> next_y_vals;
 
-          //.. add (x,y) points to list here, points are in reference to the vehicle's coordinate system
-          // the points in the simulator are connected by a Yellow line
           next_x_vals.resize(ptsxy_len);
           next_y_vals.resize(ptsxy_len);
           for (int i = 0; i < ptsxy_len; i++) {
